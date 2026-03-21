@@ -1,0 +1,28 @@
+{
+    "title": "White Cobalt",
+    "app": "Android app",
+    "subtitle": "Native Android client for downloading media from the Internet using cobalt server APIs.",
+    "stores": {
+        "title": "Stores",
+        "description": "You can download the app from the official store, a third-party store, or from the repository releases.",
+        "google": "Google Play",
+        "aurora": "Aurora Store",
+        "apkpure": "APKPure",
+        "github": "GitHub Releases"
+    },
+    "features": {
+        "title": "Features",
+        "no_obstacles": {
+            "title": "No Obstacles",
+            "description": "No ads, trackers, paywalls, or other nonsense."
+        },
+        "full_control": {
+            "title": "Full Control",
+            "description": "Choose how the download will take place."
+        },
+        "monitor_storage": {
+            "title": "Monitor Storage",
+            "description": "Manage downloaded media by service and easily free up storage."
+        }
+    }
+}

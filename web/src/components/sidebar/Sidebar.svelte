@@ -11,6 +11,7 @@
     import IconSettings from "@tabler/icons-svelte/IconSettings.svelte";
 
     import IconRepeat from "@tabler/icons-svelte/IconRepeat.svelte";
+    import IconDeviceMobile from "@tabler/icons-svelte/IconDeviceMobile.svelte";
 
     import IconComet from "@tabler/icons-svelte/IconComet.svelte";
     import IconHeart from "@tabler/icons-svelte/IconHeart.svelte";
@@ -35,6 +36,7 @@
             {#if !$settings.appearance.hideRemuxTab}
                 <SidebarTab name="remux" path="/remux" icon={IconRepeat} beta />
             {/if}
+            <SidebarTab name="app" path="/app" icon={IconDeviceMobile} />
         </div>
         <div id="sidebar-info" class="sidebar-inner-container">
             <SidebarTab name="settings" path={settingsLink} icon={IconSettings} />

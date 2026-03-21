@@ -1,4 +1,5 @@
 <script lang="ts">
+    import { onMount } from "svelte";
     import { t } from "$lib/i18n/translations";
 
     import IconA from "@tabler/icons-svelte/IconLetterA.svelte";
@@ -7,6 +8,16 @@
     import IconLockOff from "@tabler/icons-svelte/IconLockOff.svelte";
     import IconAdjustmentsHorizontal from "@tabler/icons-svelte/IconAdjustmentsHorizontal.svelte";
     import IconDatabase from "@tabler/icons-svelte/IconDatabase.svelte";
+
+    let phoneLoaded = false;
+    let phoneImage: HTMLImageElement | null = null;
+
+    onMount(() => {
+        // Cached images may finish loading before the event listener is attached.
+        if (phoneImage?.complete) {
+            phoneLoaded = true;
+        }
+    });
 </script>
 
 <svelte:head>
@@ -23,6 +34,9 @@
             aria-hidden="true"
             loading="eager"
             decoding="async"
+            bind:this={phoneImage}
+            class:loading={!phoneLoaded}
+            on:load={() => (phoneLoaded = true)}
         />
 
         <div class="hero-content">
@@ -115,8 +129,14 @@
         bottom: -18px;
         width: clamp(175px, 23vw, 260px);
         height: auto;
+        opacity: 1;
+        transition: opacity 0.15s;
         pointer-events: none;
         filter: drop-shadow(0 18px 30px rgba(0, 0, 0, 0.32));
+    }
+
+    .hero-phone.loading {
+        opacity: 0;
     }
 
     .hero h1 {

@@ -153,6 +153,10 @@
     </div>
 {/if}
 
+<div id="instance-label">
+    {$t("save.label.white_cobalt_instance")}
+</div>
+
 <div id="omnibox">
     {#if $turnstileEnabled}
         <CaptchaTooltip

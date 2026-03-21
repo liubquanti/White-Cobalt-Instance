@@ -103,7 +103,7 @@
 
     .hero,
     .card {
-        border-radius: calc(var(--border-radius) + 4px);
+        border-radius: var(--border-radius);
         border: 1px solid var(--border-color);
         background: var(--button);
         padding: 18px;
@@ -161,6 +161,10 @@
         color: var(--secondary);
     }
 
+    .card {
+        box-shadow: var(--button-box-shadow);
+    }
+
     .card h2 {
         margin: 0 0 8px;
     }
@@ -194,6 +198,12 @@
 
     .store:hover {
         background-color: var(--button-hover);
+    }
+
+    .card .subtext {
+        padding-left: 0;
+        padding-right: 0;
+        
     }
 
     .store :global(svg),

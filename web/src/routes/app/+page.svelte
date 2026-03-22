@@ -44,6 +44,18 @@
             <h1>{$t("app.title")}</h1>
             <p class="subtext hero-text">{$t("app.subtitle")}</p>
         </div>
+
+        <img
+            class="hero-phone-mobile"
+            src="/white/phone.png"
+            alt=""
+            aria-hidden="true"
+            loading="eager"
+            decoding="async"
+            bind:this={phoneImage}
+            class:loading={!phoneLoaded}
+            on:load={() => (phoneLoaded = true)}
+        />
     </header>
 
     <section class="card">
@@ -111,7 +123,7 @@
 
     .hero {
         background: linear-gradient(120deg, var(--button), var(--secondary-transparent));
-        min-height: 230px;
+        min-height: 200px;
         display: flex;
         justify-content: center;
         align-items: center;
@@ -122,12 +134,12 @@
         max-width: 560px;
     }
 
-    .hero-phone {
+    .hero-phone, .hero-phone-mobile {
         position: relative;
         flex: 0 0 auto;
         align-self: end;
         bottom: -18px;
-        width: clamp(175px, 23vw, 260px);
+        width: clamp(240px, 23vw, 260px);
         height: auto;
         opacity: 1;
         transition: opacity 0.15s;
@@ -135,7 +147,11 @@
         filter: drop-shadow(0 18px 30px rgba(0, 0, 0, 0.32));
     }
 
-    .hero-phone.loading {
+    .hero-phone-mobile {
+        display: none;
+    }
+
+    .hero-phone.loading, .hero-phone-mobile.loading {
         opacity: 0;
     }
 
@@ -257,7 +273,7 @@
         }
 
         .hero {
-            min-height: 260px;
+            min-height: auto;
             flex-direction: column;
             row-gap: 10px;
         }
@@ -268,8 +284,13 @@
         }
 
         .hero-phone {
-            bottom: 0;
-            width: min(62vw, 220px);
+            display: none;
+        }
+
+        .hero-phone-mobile {
+            display: block;
+            align-self: center;
+            width: clamp(100px, 80vw, 260px);
         }
 
         .store-grid {

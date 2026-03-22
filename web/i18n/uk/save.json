@@ -19,7 +19,7 @@
     "tutorial.outro": "ці команди працюють лише з застосунку cobalt; передача посилань з інших застосунків не спрацює.",
     "tutorial.shortcut.photos": "у Фото",
     "tutorial.shortcut.files": "у Файли",
-    "label.community_instance": "інстанція cobalt від спільноти",
-    "label.white_cobalt_instance": "офіційна інстанція White Cobalt",
+    "label.community_instance": "інстанс cobalt від спільноти",
+    "label.white_cobalt_instance": "офіційний інстанс White Cobalt",
     "tooltip.captcha": "cloudflare turnstile перевіряє, що ви не бот. зачекайте, будь ласка!"
 }

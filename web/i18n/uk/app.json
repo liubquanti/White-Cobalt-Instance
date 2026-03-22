@@ -1,0 +1,28 @@
+{
+    "title": "White Cobalt",
+    "app": "Android застосунок",
+    "subtitle": "Нативний Android клієнт для завантаження медіа з інтернету через API сервера cobalt.",
+    "stores": {
+        "title": "Магазини",
+        "description": "Ви можете завантажити застосунок з офіційного магазину, стороннього магазину або з релізів репозиторію.",
+        "google": "Google Play",
+        "aurora": "Aurora Store",
+        "apkpure": "APKPure",
+        "github": "GitHub Releases"
+    },
+    "features": {
+        "title": "Можливості",
+        "no_obstacles": {
+            "title": "Без перешкод",
+            "description": "Без реклами, трекерів, платних обмежень та іншої нісенітниці."
+        },
+        "full_control": {
+            "title": "Повний контроль",
+            "description": "Оберіть, як саме відбуватиметься завантаження."
+        },
+        "monitor_storage": {
+            "title": "Контроль сховища",
+            "description": "Керуйте завантаженими медіа за сервісами й легко звільняйте місце."
+        }
+    }
+}

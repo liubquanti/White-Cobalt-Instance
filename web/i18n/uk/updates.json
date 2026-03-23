@@ -1,4 +1,4 @@
 {
-    "button.next": "перейти до старішого журналу змін ({{ value }})",
-    "button.previous": "перейти до новішого журналу змін ({{ value }})"
+    "button.next": "до старіших змін ({{ value }})",
+    "button.previous": "до новіших змін ({{ value }})"
 }

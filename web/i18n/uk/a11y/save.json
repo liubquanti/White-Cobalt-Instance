@@ -7,6 +7,6 @@
     "download.check": "перевіряємо завантаження...",
     "download.done": "завантаження завершено",
     "download.error": "помилка завантаження",
-    "tutorial.shortcut.photos": "додати команду Фото",
-    "tutorial.shortcut.files": "додати команду Файли"
+    "tutorial.shortcut.photos": "додати команду \"фото\"",
+    "tutorial.shortcut.files": "додати команду \"файли\""
 }
